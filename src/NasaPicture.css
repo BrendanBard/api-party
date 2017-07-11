@@ -1,7 +1,7 @@
-.image img{
-    height: 200px;
-    border-radius: 50%;
+.nasa-picture img{
+    height: 400px;
+    border-radius: 70%;
 }
-.NasaPicture h3{
+.nasa-picture h3{
     color: darkgray;
 }

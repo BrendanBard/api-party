@@ -25,7 +25,7 @@ class NasaPicture extends Component{
         return(
             <div className='nasa-picture'>
                 <h2> {picture.title}</h2>
-                <img className='image' src={picture.hdurl} alr='user avatar'/>
+                <img className='image' src={picture.hdurl}/>
                 <h3> {picture.date}</h3>
                 <h3> {picture.explanation}</h3>
                 </div>

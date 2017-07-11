@@ -5,15 +5,15 @@ import './Nasa.css'
 
 class Nasa extends Component {
     state = {
-        picture: '',
+        date: '',
     }
     handleChange =(ev) => {
-        this.setState({picture: ev.target.value})
+        this.setState({date: ev.target.value})
     }
     handleSubmit = (ev) =>{
         ev.preventDefault()
-        this.props.history.push(`/Nasa/${this.state.picture}`)
-        this.setState({picture: ''})
+        this.props.history.push(`/Nasa/${this.state.date}`)
+        this.setState({date: ''})
     }  
 
     render() {
@@ -22,14 +22,14 @@ class Nasa extends Component {
             <img className='Nasa-Logo' src='http://vector.me/files/images/1/3/13605/nasa.png' alt='Nasa logo'/>
             <form onSubmit={this.handleSubmit}>
                 <div>
-                <input type='date' value={this.state.picture} onChange={this.handleChange}/>
+                <input type='date' value={this.state.date} onChange={this.handleChange}/>
                 </div>
                 <div>
-                    <button>Enter</button>
+                    <button>View Picture of the Day</button>
                     </div>
                 </form>
                 <Route exact path ='/Nasa' render={() => <h3>Please enter a date to view</h3>} />
-                <Route path='/Nasa/:picture' component={NasaPicture}/>
+                <Route path='/Nasa/:date' component={NasaPicture}/>
             </div>
         )
     }
