@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import {Route, Switch} from 'react-router-dom'
+
 
 class App extends Component {
   render() {
@@ -11,7 +13,9 @@ class App extends Component {
             <h1>API Party </h1>
           </div>
         </div>
-        
+        <Switch>
+          <Route render={() => <p>To get started, click one of the links above</p>}/>
+          </Switch>
       </div>
     );
   }
