@@ -10,6 +10,33 @@ h1{
 h3{
   font: italic 400 30px/40px "Gentium Book Basic", serif;
 }
+.nav-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.nav-links a {
+  color: #02b1ff;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.nav-links a.active {
+  color: #F79824;
+}
+
+.nav-links a.active:hover {
+  color: #FDCA40;
+}
+
+.nav-links a:hover {
+  color: #0184be;
+}
 
 .App-headings {
   background-color: #222;
@@ -18,11 +45,3 @@ h3{
   color: white;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
